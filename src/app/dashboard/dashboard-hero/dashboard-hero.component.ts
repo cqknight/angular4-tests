@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { Hero } from '../hero';
+import { Hero } from '../../model/hero';
 
 @Component({
   // tslint:disable-next-line:component-selector
@@ -10,5 +10,6 @@ import { Hero } from '../hero';
 export class DashboardHeroComponent {
   @Input() hero: Hero;
   @Output() selected = new EventEmitter<Hero>();
+
   click() { this.selected.emit(this.hero); }
 }

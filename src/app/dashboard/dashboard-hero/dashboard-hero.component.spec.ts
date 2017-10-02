@@ -3,7 +3,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { DashboardHeroComponent } from './dashboard-hero.component';
 import { By } from '@angular/platform-browser';
 import { DebugElement, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { Hero } from '../hero';
+import { Hero } from '../../model/hero';
 
 
 

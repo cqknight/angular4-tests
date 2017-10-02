@@ -1,5 +1,5 @@
 import { Router } from '@angular/router';
-import { HeroService } from './hero.service';
+import { HeroService } from '../model/hero.service';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { DashboardComponent } from './dashboard.component';
@@ -40,19 +40,16 @@ describe('DashboardComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  // xit('should tell ROUTER to navigate when hero clicked',
-  //   inject([Router], (router: Router) => { // ...
+  xit('should tell ROUTER to navigate when hero clicked', inject([Router], (router: Router) => {
+    const spy = spyOn(router, 'navigateByUrl');
 
-  //     const spy = spyOn(router, 'navigateByUrl');
+    // heroClick(); // trigger click on first inner <div class="hero">
 
-  //     heroClick(); // trigger click on first inner <div class="hero">
+    // args passed to router.navigateByUrl()
+    const navArgs = spy.calls.first().args[0];
 
-  //     // args passed to router.navigateByUrl()
-  //     const navArgs = spy.calls.first().args[0];
-
-  //     // expecting to navigate to id of the component's first hero
-  //     const id = component.heroes[0].id;
-  //     expect(navArgs).toBe('/heroes/' + id,
-  //       'should nav to HeroDetail for first hero');
-  //   }));
+    // expecting to navigate to id of the component's first hero
+    const id = component.heroes[0].id;
+    expect(navArgs).toBe('/heroes/' + id, 'should nav to HeroDetail for first hero $id');
+  }));
 });
