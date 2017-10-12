@@ -17,10 +17,11 @@ export class DashboardComponent implements OnInit {
   }
 
   ngOnInit() {
+    console.log('Dashboard init.');
   }
 
   gotoDetail(hero: Hero) {
-    let url = `/heroes/${hero.id}`;
+    const url = `/heroes/${hero.id}`;
     this.router.navigateByUrl(url);
   }
 }

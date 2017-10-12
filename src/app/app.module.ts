@@ -1,18 +1,18 @@
+import { DashboardModule } from './dashboard/dashboard.module';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { TwainComponent } from './twain/twain.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TwainComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    DashboardModule,
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }
