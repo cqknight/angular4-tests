@@ -9,12 +9,16 @@
     </div>
   </div>
   <div class="row">
-    <twain-quote></twain-quote>
-    <!-- <app-dashboard></app-dashboard> -->
+    <div class="col-lg-12">
+      <nav>
+        <a routerLink="/twain" routerLinkActive="active">Twain</a>
+        <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
+      </nav>
+      <router-outlet></router-outlet>
+    </div>
   </div>
   <div class="row">
     <div class="col-lg-3">
-      <i class="fa fa-camera-retro fa-lg"></i>
     </div>
     <div class="col-lg-9">
       <button class="btn btn-primary">Bootstrap Primary Button</button>

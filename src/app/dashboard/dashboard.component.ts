@@ -17,7 +17,6 @@ export class DashboardComponent implements OnInit {
   }
 
   ngOnInit() {
-    console.log('Dashboard init.');
   }
 
   gotoDetail(hero: Hero) {
