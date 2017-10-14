@@ -1,27 +1,22 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div class="container">
   <div class="row">
-    <div class="col-lg-12">
+    <div class="col-md-12">
       <h1>
         Welcome to {{title}}!
         <i class="fa fa-check"></i>
       </h1>
     </div>
   </div>
-  <div class="row">
-    <div class="col-lg-12">
-      <nav>
+  <div class="row routelinks">
+    <nav>
+      <div class="col-md-3">
         <a routerLink="/twain" routerLinkActive="active">Twain</a>
+      </div>
+      <div class="col-md-3">
         <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
-      </nav>
-      <router-outlet></router-outlet>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-lg-3">
-    </div>
-    <div class="col-lg-9">
-      <button class="btn btn-primary">Bootstrap Primary Button</button>
-    </div>
+      </div>
+    </nav>
+    <router-outlet></router-outlet>
   </div>
 </div>

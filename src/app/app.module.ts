@@ -1,3 +1,4 @@
+import { PageNotFoundComponent } from './not-found.component';
 import { DashboardModule } from './dashboard/dashboard.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
@@ -10,6 +11,7 @@ import { TwainModule } from './twain/twain.module';
 @NgModule({
   declarations: [
     AppComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
