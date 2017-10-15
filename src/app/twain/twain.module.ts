@@ -7,7 +7,7 @@ import { RouterModule } from '@angular/router';
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule.forChild([{path: '', component: TwainComponent}]),
+    RouterModule.forChild([{path: 'twain', component: TwainComponent}]),
   ],
   declarations: [TwainComponent],
   providers: [TwainService],

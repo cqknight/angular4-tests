@@ -4,14 +4,13 @@ import { DashboardComponent } from './dashboard.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { HeroDetailsComponent } from './hero-details/hero-details.component';
 
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule.forChild([{ path: '', component: DashboardComponent }])
+    RouterModule.forChild([{ path: 'dashboard', component: DashboardComponent }])
   ],
-  declarations: [DashboardComponent, DashboardHeroComponent, HeroDetailsComponent],
+  declarations: [DashboardComponent, DashboardHeroComponent],
   providers: [HeroService]
 })
 export class DashboardModule { }

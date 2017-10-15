@@ -6,17 +6,17 @@ import { PageNotFoundComponent } from './not-found.component';
 
 const appRoutes: Routes = [
   {
-    path: '',
-    redirectTo: './twain',
-    pathMatch: 'full'
-  },
-  {
     path: 'twain',
     loadChildren: 'app/twain/twain.module#TwainModule'
   },
   {
     path: 'dashboard',
     loadChildren: 'app/dashboard/dashboard.module#DashboardModule'
+  },
+  {
+    path: '',
+    redirectTo: '/heroes',
+    pathMatch: 'full'
   },
   { path: '**', component: PageNotFoundComponent }
 ];

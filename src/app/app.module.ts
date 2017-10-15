@@ -1,3 +1,4 @@
+import { HeroesModule } from './heroes/heroes.module';
 import { PageNotFoundComponent } from './not-found.component';
 import { DashboardModule } from './dashboard/dashboard.module';
 import { BrowserModule } from '@angular/platform-browser';
@@ -7,6 +8,7 @@ import { AppComponent } from './app.component';
 import { RoutingModule } from './app.routing.module';
 import { TwainModule } from './twain/twain.module';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -15,9 +17,11 @@ import { TwainModule } from './twain/twain.module';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
+    TwainModule,
     DashboardModule,
+    HeroesModule,
     RoutingModule,
-    TwainModule
   ],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],

@@ -8,15 +8,21 @@
       </h1>
     </div>
   </div>
-  <div class="row routelinks">
+  <div class="row">
     <nav>
-      <div class="col-md-3">
+      <div class="col-md-2 col-sx-6">
+        <a routerLink="/heroes" routerLinkActive="active">Hero List</a>
+      </div>
+      <div class="col-md-2 col-sx-6">
         <a routerLink="/twain" routerLinkActive="active">Twain</a>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-2 col-sx-6">
         <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
       </div>
+      <div class="col-md-9 col-sx-3">
+      </div>
     </nav>
-    <router-outlet></router-outlet>
   </div>
+
+  <router-outlet></router-outlet>
 </div>
