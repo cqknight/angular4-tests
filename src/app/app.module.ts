@@ -1,3 +1,6 @@
+import { FormsModule } from '@angular/forms';
+import { ComposeMessageComponent } from './compose-message.component';
+import { CrisisCenterModule } from './crisis-center/crisis-center.module';
 import { HeroesModule } from './heroes/heroes.module';
 import { PageNotFoundComponent } from './not-found.component';
 import { DashboardModule } from './dashboard/dashboard.module';
@@ -13,7 +16,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    ComposeMessageComponent,
   ],
   imports: [
     BrowserModule,
@@ -21,7 +25,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     TwainModule,
     DashboardModule,
     HeroesModule,
+    CrisisCenterModule,
     RoutingModule,
+    FormsModule,
   ],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],

@@ -19,10 +19,15 @@
       <div class="col-md-2 col-sx-6">
         <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
       </div>
-      <div class="col-md-9 col-sx-3">
+      <div class="col-md-2 col-sx-6">
+        <a routerLink="/crisis-center" routerLinkActive="active">Crisis Center</a>
+      </div>
+      <div class="col-md-2 col-sx-3">
+        <a [routerLink]="[{ outlets: { popup: ['compose'] } }]">Contact</a>
       </div>
     </nav>
   </div>
 
   <router-outlet></router-outlet>
+  <router-outlet name="popup"></router-outlet>
 </div>
