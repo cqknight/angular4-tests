@@ -7,7 +7,7 @@ import { HeroService } from '../model/hero.service';
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.css']
+  styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
   heroes: Hero[];
@@ -17,10 +17,13 @@ export class DashboardComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.heroService.getHeroes().subscribe(
+      (results) => { this.heroes = results; }
+    );
   }
 
   gotoDetail(hero: Hero) {
-    const url = `/heroes/${hero.id}`;
+    const url = `/hero-details/${hero.id}`;
     this.router.navigateByUrl(url);
   }
 }

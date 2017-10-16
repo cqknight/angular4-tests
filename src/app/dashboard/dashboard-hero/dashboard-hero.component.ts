@@ -5,7 +5,7 @@ import { Hero } from '../../model/hero';
   // tslint:disable-next-line:component-selector
   selector:    'dashboard-hero',
   templateUrl: './dashboard-hero.component.html',
-  styleUrls: [ './dashboard-hero.component.css' ]
+  styleUrls: [ './dashboard-hero.component.scss' ]
 })
 export class DashboardHeroComponent {
   @Input() hero: Hero;

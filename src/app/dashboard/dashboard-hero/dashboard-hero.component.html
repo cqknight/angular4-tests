@@ -1,3 +1,8 @@
-<div (click)="click()" class="hero">
-  {{hero.name | uppercase}}
+<div class="row hero" (click)="click()">
+  <div class="col-md-1">
+    {{hero.id}}
+  </div>
+  <div class="col-md-3">
+    {{hero.name | uppercase}}
+  </div>
 </div>
