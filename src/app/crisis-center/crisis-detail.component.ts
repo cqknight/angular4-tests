@@ -10,7 +10,7 @@ import { Observable } from 'rxjs/Observable';
     selector: 'app-crisis-detail',
     templateUrl: './crisis-detail.component.html',
     styleUrls: ['./crisis-detail.component.scss'],
-    animations: [slideInDownAnimation]
+    animations: [slideInDownAnimation],
 })
 export class CrisisDetailComponent implements OnInit {
     @HostBinding('@routeAnimation') routeAnimation = true;
