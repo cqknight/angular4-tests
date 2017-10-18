@@ -7,6 +7,7 @@ nav a {
     background-color: #eee;
     border-radius: 4px;
   }
+  
   nav a:visited, a:link {
     color: #607D8B;
   }
@@ -17,3 +18,15 @@ nav a {
   nav a.active {
     color: #039be5;
   }
+
+  footer {
+    background: #3c3a34;;
+    margin-top: 80px;
+    color: #f3f5f7
+  }
+
+  .colorstrip{
+    width: 100%; height: 5px;
+    border-style: solid;
+    border-color: rgb(28, 5, 143);
+}
