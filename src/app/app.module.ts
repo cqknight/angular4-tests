@@ -1,3 +1,5 @@
+import { DialogService } from './dialog.service';
+import { CanDeactivateGuard } from './can-deactivate-guard.serivce';
 import { LoginComponent } from './login.component';
 import { LoginRoutingModule } from './login-routing.module';
 import { AdminModule } from './admin/admin.module';
@@ -37,6 +39,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   ],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  providers: []
+  providers: [DialogService, CanDeactivateGuard]
 })
 export class AppModule { }
