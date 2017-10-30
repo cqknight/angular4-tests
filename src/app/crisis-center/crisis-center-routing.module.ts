@@ -11,11 +11,6 @@ import { CrisisDetailComponent } from './crisis-detail.component';
 const crisisCenterRoutes: Routes = [
     {
         path: '',
-        redirectTo: '/crisis-center',
-        pathMatch: 'full'
-    },
-    {
-        path: 'crisis-center',
         component: CrisisCenterComponent,
         children: [
             {
